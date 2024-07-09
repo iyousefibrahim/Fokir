@@ -1,0 +1,877 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* -------------- Home Section -------------- */
+
+#home {
+  background-image: url(../img/hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position-y: 40%;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.black-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+}
+
+.nav {
+  padding: 5px;
+}
+
+.nav .logo {
+  float: left;
+  margin: 10px;
+  width: 40%;
+  color: rgb(255, 48, 91);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.nav .links {
+  float: right;
+  padding: 10px;
+  width: 50%;
+}
+
+.nav .links li {
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+}
+
+.nav .links li a {
+  text-decoration: none;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.clr {
+  clear: both;
+}
+
+.nav .links li a:hover {
+  color: rgb(255, 48, 91);
+  transition: 0.5s;
+}
+
+.home-content {
+  text-align: center;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.home-content .p1,
+.p2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
+
+.home-content h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: rgb(255, 48, 91);
+  transition: 1s;
+}
+
+.home-content .p2 {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/* <-------------- Home Section --------------> */
+
+/* <----------- About Section -----------> */
+
+#about {
+  padding: 100px;
+}
+
+.about-photo {
+  width: 35%;
+  float: left;
+  border: 8px solid #555555;
+  border-radius: 5px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.about-photo img {
+  width: 100%;
+  border: none;
+  position: relative;
+}
+
+.about-layer {
+  background: rgba(0, 0, 0, 0.57);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  left: 20px;
+  top: 443px;
+}
+.about-photo:hover .about-layer {
+  opacity: 100;
+  visibility: visible;
+  height: 100%;
+  transition: 0.5s;
+  transform: translateY(-424px);
+}
+
+.photo-layer {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.about-icons {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  margin: 12px;
+  margin-left: 90px;
+  transition: 0.5s;
+  left: 20px;
+  top: 443px;
+  transition: 0.5s;
+  height: 0;
+  visibility: hidden;
+  color: white;
+}
+.about-icons i {
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.about-icons i:hover {
+  color: rgb(255, 48, 91);
+  transition: 0.5s;
+}
+
+.about-icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.about-photo:hover .about-icons {
+  height: 100%;
+  visibility: visible;
+  transform: translatey(-245px);
+  transition: 0.5s;
+}
+
+.about-content {
+  width: 60%;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.about-words span {
+  border: 2px solid rgb(255, 48, 91);
+  margin-right: 3px;
+  display: inline-block;
+  height: 25px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.about-words h4 {
+  padding: 10px;
+  font-family: "Source Sans 3", sans-serif;
+  font-family: 300;
+  font-size: 34px;
+  color: rgb(51, 51, 51);
+  display: inline-block;
+}
+
+.about-words p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(85, 85, 85);
+}
+
+.about-words {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999999;
+  border-bottom-style: dashed;
+}
+
+.about-info {
+  width: 90%;
+  padding: 10px;
+  padding-left: 0;
+}
+.about-info .info-item,
+.info-item4,
+.info-item2,
+.info-item6 {
+  padding: 12px;
+  padding-left: 0;
+  display: inline-block;
+}
+
+.about-info .info-item p,
+.info-item4 p,
+.info-item2 p,
+.info-item6 p {
+  display: inline-block;
+}
+
+.info-item4 {
+  padding-left: 125px;
+}
+
+.info-item2 {
+  padding-left: 70px;
+}
+
+.info-item6 {
+  padding-left: 72px;
+}
+
+.about-info .info-item .p1,
+.info-item4 .p1,
+.info-item2 .p1,
+.info-item6 .p1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+}
+
+.info-item .about-p2,
+.info-item4 .about-p2,
+.info-item2 .about-p2,
+.info-item6 .about-p2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+}
+
+.about-btns {
+  margin-top: 10px;
+}
+.about-btns .btn1 {
+  margin-right: 15px;
+}
+.about-btns button {
+  padding: 10px 23px 10px 23px;
+  background-color: rgb(255, 48, 91);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-btns button:hover {
+  background-color: red;
+  transition: 0.5s;
+}
+
+.about-btns i {
+  font-size: 15px;
+}
+.about-btns .btn2 i {
+  padding-left: 10px;
+}
+
+/* <----------- About Section -----------> */
+
+/* <----------- Services Section -----------> */
+
+#services {
+  background-color: rgb(241, 241, 241);
+}
+
+#services .container {
+  width: 90%;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.thelines {
+  background-color: rgb(255, 48, 91);
+  width: 150px;
+  height: 2px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.thelines::before {
+  content: "";
+  background-color: rgb(255, 48, 91);
+  width: 80px;
+  height: 2px;
+  margin: 20px auto;
+  position: absolute;
+  top: -26px;
+  left: 35px;
+}
+
+.thelines::after {
+  content: "";
+  background-color: rgb(255, 48, 91);
+  width: 80px;
+  height: 2px;
+  margin: 20px auto;
+  position: absolute;
+  bottom: -26px;
+  left: 35px;
+}
+
+#services .main-h4 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  color: rgb(51, 51, 51);
+}
+
+#services .items-section {
+  width: 100%;
+  margin-top: 35px;
+}
+
+#services .items-section .item i {
+  color: rgb(255, 48, 91);
+  margin-bottom: 25px;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+#services .items-section .item:hover i {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+#services .items-section .item:hover  {
+  box-shadow:0 15px 20px rgba(0, 0, 0, 0.1) ;
+}
+
+
+
+#services .items-section .item {
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  padding: 55px;
+  width: 25%;
+  float: left;
+  transition: 0.5s;
+  box-shadow: 5px black;
+}
+
+#services .items-section .item:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+
+#services .items-section .item h4 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  color: rgb(51, 51, 51);
+}
+
+#services .items-section .item p {
+  padding-top: 15px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(85, 85, 85);
+}
+
+/* <----------- Services Section -----------> */
+
+/* <----------- Portfolio Section -----------> */
+
+#portfolio {
+  text-align: center;
+}
+
+#portfolio .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+
+#portfolio .container .h4-portfolio {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: rgb(51, 51, 51);
+}
+
+#portfolio .container .categories a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#portfolio .container .categories p {
+  display: inline-block;
+  padding-top: 55px;
+  margin: 10px;
+}
+
+#portfolio .container .protfolio-items .item1,
+.container .protfolio-items .item2,
+.container .protfolio-items .item3,
+.container .protfolio-items .item4,
+.container .protfolio-items .item5,
+.container .protfolio-items .item6 {
+  float: left;
+  width: 30%;
+  margin: 5px;
+  margin-left: 26px;
+  margin-top: 35px;
+  transition: 0.5s;
+  position: relative;
+  transition: 0.5s;
+}
+
+#portfolio .container .protfolio-items i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  top: 250px;
+  right: 0;
+  left: 165px;
+  transition: 0.5s;
+  color: rgb(255, 48, 91);
+}
+
+#portfolio .container .protfolio-items img {
+  width: 100%;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+#portfolio .container .protfolio-items .item1:hover .layer,
+#portfolio .container .protfolio-items .item2:hover .layer,
+#portfolio .container .protfolio-items .item3:hover .layer,
+#portfolio .container .protfolio-items .item4:hover .layer,
+#portfolio .container .protfolio-items .item5:hover .layer,
+#portfolio .container .protfolio-items .item6:hover .layer {
+  visibility: visible;
+  opacity: 100;
+  transition: 0.5s;
+}
+
+#portfolio .container .protfolio-items .item1:hover i,
+#portfolio .container .protfolio-items .item2:hover i,
+#portfolio .container .protfolio-items .item3:hover i,
+#portfolio .container .protfolio-items .item4:hover i,
+#portfolio .container .protfolio-items .item5:hover i,
+#portfolio .container .protfolio-items .item6:hover i {
+  visibility: visible;
+  opacity: 100;
+  transition: 0.5s;
+}
+
+/* <----------- Portfolio Section -----------> */
+
+/* <----------- Statistics Section -----------> */
+
+#statistics {
+  background-color: #f1f1f1;
+}
+
+#statistics .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#statistics .container h4 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: rgb(51, 51, 51);
+}
+
+#statistics .container p {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(85, 85, 85);
+}
+
+#statistics .container .item i {
+  color: rgb(255, 48, 91);
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+#statistics .container .item {
+  float: left;
+  width: 25%;
+  padding: 60px;
+}
+
+/* <----------- Statistics Section -----------> */
+
+/* <----------- Feedback Section -----------> */
+
+#feedback .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#feedback .container h3 {
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: rgb(51, 51, 51);
+}
+
+#feedback .container .feedback-card {
+  background-color: #f1f1f1;
+  margin: auto;
+  margin-top: 55px;
+  width: 65%;
+  padding: 55px;
+  border-radius: 5px;
+  position: relative;
+}
+#feedback .container .feedback-card img {
+  float: left;
+  width: 20%;
+  border-radius: 50%;
+  z-index: 4;
+  position: relative;
+}
+
+#feedback .container .feedback-card .card-content {
+  float: right;
+  width: 75%;
+}
+
+#feedback .container .feedback-card .card-layer {
+  position: absolute;
+  border-bottom: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-left: 200px solid #ff305b;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  transform: translateX(5);
+}
+
+#feedback .container .feedback-card .card-content h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 29px;
+  padding-bottom: 15px;
+}
+
+#feedback .container .feedback-card .card-content .p-location i {
+  padding-right: 5px;
+}
+
+#feedback .container .feedback-card .card-content .p-location {
+  font-family: "Source Sans 3", sans-serif;
+  color: rgb(119, 119, 119);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+#feedback .container .feedback-card .card-content p {
+  color: rgb(85, 85, 85);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 16px;
+  padding-top: 10px;
+  font-style: italic;
+}
+#feedback .container .feedback-card .card-content .star-rate {
+  color: gold;
+  padding-top: 10px;
+}
+
+/* <----------- Feedback Section -----------> */
+
+/* <----------- Blog Section -----------> */
+
+#blog {
+  background-color: #f1f1f1;
+}
+
+#blog .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#blog .container h3 {
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: rgb(51, 51, 51);
+}
+
+#blog .container .blog-cards {
+  margin-left: 90px;
+  margin-top: 40px;
+}
+
+#blog .container .blog-cards .about-card {
+  float: left;
+  width: 30%;
+  background-color: #fff;
+  margin: 15px;
+  padding-bottom: 30px;
+}
+
+#blog .container .blog-cards .about-card p {
+  padding: 5px;
+  padding-left: 15px;
+}
+
+#blog .container .blog-cards .about-card .date {
+  padding-top: 10px;
+}
+
+#blog .container .blog-cards .about-card .date,
+#blog .container .blog-cards .about-card .desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+}
+
+#blog .container .blog-cards .about-card .main-p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+#blog .container .blog-cards .about-card .main-p:hover {
+  color: #ff305b;
+  transition: 0.5s;
+}
+
+#blog .container .blog-cards .about-card iframe {
+  width: 100%;
+  height: 190px;
+}
+
+#blog .container .blog-cards .about-card img {
+  width: 100%;
+}
+
+#blog .container .blog-cards .about-card button {
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  transition: 0.5s;
+  color: black;
+}
+
+#blog .container .blog-cards .about-card button:hover {
+  transition: 0.5s;
+  color: #ff305b;
+}
+
+/* <----------- Blog Section -----------> */
+
+/* <----------- Contact Section -----------> */
+
+#contact .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#contact .container h4 {
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  color: rgb(51, 51, 51);
+}
+
+#contact .container form {
+  margin: auto;
+  margin-top: 40px;
+
+  width: 60%;
+  padding: 20px;
+}
+
+#contact .container #Name {
+  float: left;
+  padding: 10px;
+  padding-right: 160px;
+  border-color: #cccccc;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#contact .container #Name::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .container #Email {
+  float: right;
+  padding: 10px;
+  padding-right: 140px;
+  border-color: #cccccc;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#contact .container #Email::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact .container #Subject {
+  margin-top: 20px;
+  padding: 10px;
+  padding-right: 505px;
+  display: block;
+  border-color: #cccccc;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#contact .container #Subject::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+#contact .container textarea {
+  resize: both;
+  margin-top: 25px;
+  padding-right: 450px;
+  border-color: #cccccc;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#contact .container textarea::placeholder {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  margin-top: 15px;
+  padding: 10px 15px 10px 15px;
+  background-color: rgb(255, 48, 91);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+  background-color: red;
+  transition: 0.5s;
+}
+/* <----------- Contact Section -----------> */
+
+/* <----------- Footer Section -----------> */
+#footer {
+  background-color: #333333;
+}
+
+#footer .container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer .container .icons a i {
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+#footer .container .icons a i:hover {
+  transition: 0.5s;
+  color: rgb(255, 48, 91);
+}
+
+#footer .container p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#footer .container span {
+  color: rgb(255, 48, 91);
+}
+
+/* <----------- Footer Section -----------> */
